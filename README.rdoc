@@ -1,0 +1,21 @@
+= Sunrise questions
+
+== Install
+
+  rails generate sunrise:questions:install
+  
+  rake db:migrate
+
+== Usage
+
+  class Structure < ActiveRecord::Base
+    has_many :questions, :dependent => :delete_all
+  end
+
+  manage_structure_questions_path(:structure_id => structure.id)
+
+== Test
+
+  rake test
+
+Copyright (c) 2011 Aimbulance, released under the MIT license

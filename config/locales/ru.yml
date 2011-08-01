@@ -1,0 +1,16 @@
+ru:
+  manage:
+    plugins:
+      questions: "Вопросы и ответы"
+      
+    menu:
+      questions: "Вопросы и ответы"
+    
+  activerecord:
+    attributes:
+      question:
+        title: "Название"
+        content: "Содержание"
+        sort_order: "Сортировка"
+        is_visible: "Отображать?"
+        structure_id: "Категория"

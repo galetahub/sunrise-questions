@@ -1,0 +1,17 @@
+<%= manage_form_for [@structure, @question] do |f| %> 
+  <div class="edit-cont">
+    <div class="inputs-bl">              
+      <%= f.input :title, :input_html => { :class => 'text name' } %>
+      
+      <%= f.input :sort_order %>
+              
+      <%= f.ckeditor :content, :input_html => options_for_ckeditor %>
+              
+      <div class="radio-bl">
+        <%= f.input :is_visible %>
+      </div>
+    </div>
+  </div>
+  
+  <%= f.button :submit, :url => manage_structure_questions_path(@structure.id) %>
+<% end %>

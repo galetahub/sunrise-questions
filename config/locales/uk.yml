@@ -1,0 +1,16 @@
+uk:
+  manage:
+    plugins:
+      questions: "Питання та відповіді"
+      
+    menu:
+      questions: "Питання та відповіді"
+    
+  activerecord:
+    attributes:
+      question:
+        title: "Назва"
+        content: "Зміст"
+        sort_order: "Сортування"
+        is_visible: "Відображати?"
+        structure_id: "Категорія"
