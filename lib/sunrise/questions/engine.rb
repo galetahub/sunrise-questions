@@ -11,7 +11,7 @@ module Sunrise
           plugin.version = Sunrise::Questions::VERSION.dup
         end
         
-        Sunrise::Plugins.activate(:posts)
+        Sunrise::Plugins.activate(:questions)
       end
     end
   end

@@ -1,7 +1,7 @@
 class Manage::QuestionsController < Manage::BaseController
   inherit_resources
   defaults :route_prefix => 'manage'  
-  belongs_to :structure, :finder => :find_by_param!
+  belongs_to :structure, :finder => :find_by_permalink!
   
   before_filter :make_filter, :only => [:index]
   

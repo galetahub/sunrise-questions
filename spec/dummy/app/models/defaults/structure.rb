@@ -8,11 +8,9 @@ class Structure < ActiveRecord::Base
                   :position_type, :slug, :parent, :structure_type, 
                   :header_attributes, :is_visible
   
-  def self.find_by_param!(value)
-    return if value.blank?
-    
-    query = scoped
-    record = value.to_s.is_int? ? query.where(:id => value.to_i).first : query.where(:slug => value.to_s).first
-    record
+  def self.find_by_permalink!(value)
+    record = find_by_permalink(value)
+    raise ActiveRecord::RecordNotFound, "Couldn't find structure by #{value}" if record.nil?
+    return record
   end
 end
