@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version = Sunrise::Questions::VERSION.dup
   s.platform = Gem::Platform::RUBY 
   s.summary = "Questions plugin for sunrise-cms"
-  s.description = "Questions plugin for sunrise-cms"
+  s.description = "Questions plugin for Sunrise CMS via aimbulance"
   s.authors = ["Igor Galeta"]
   s.email = "galeta.igor@gmail.com"
   s.rubyforge_project = "sunrise-questions"
